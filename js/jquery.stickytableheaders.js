@@ -127,9 +127,11 @@
 						return;
 					}
 
+					var minMarginTop = $(".navbar-fixed-top").length > 0 ? 54 : 0;
+
 					base.$clonedHeader.css({
 						'top': newTopOffset,
-						'margin-top': 0,
+						'margin-top': minMarginTop,
 						'left': newLeft,
 						'display': 'block'
 					});
